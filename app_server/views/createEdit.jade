@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  h1= title
+  h1 Add New Item
+  
+  .row
+     .col-12.col-md-8
+        form(action="/displayList", method="get", role="form") 
+          .form-group.row
+             label.col-10.col-sm-2.col-form-label(for="name") Name
+             .col-12.col-sm-10
+                input#name.form-control(name="name")
+          .form-group.row
+             label.col-10.col-sm-2.col-form-label(for="name") Date
+             .col-12.col-sm-10
+                input#name.form-control(name="name")
+          .form-group.row
+             label.col-10.col-sm-2.col-form-label(for="name") Expiry
+             .col-12.col-sm-10
+                input#name.form-control(name="name")
+          .form-group.row
+             label.col-10.col-sm-2.col-form-label(for="name") Left Overs
+             .col-12.col-sm-10
+                input#name.form-control(name="name")
+          .form-group.row
+             label.col-10.col-sm-2.col-form-label(for="name") Quantity
+             .col-12.col-sm-10
+                input#name.form-control(name="name")
+          button.btn.btn-primary.float-right Add New Item
+    .col-12.col-md-4
